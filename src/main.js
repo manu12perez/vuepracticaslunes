@@ -12,10 +12,24 @@ var app = createApp(App);
                     "<p style='color:red'>" + numero + " - Par </p>"
                 )
             } else {
-                return(
+                return (
                     "<p style='color:orange'>" + numero + " - Impar</p>"
                 )
             }
+        },
+        // Metodo del profesor
+        // evaluarNumero(num) {
+        //     if (num % 2 == 0) {
+        //         return "<span style='color:green'>" + num + "</span>";
+        //     } else {
+        //         return "<span style='color:red'>" + num + "</span>";
+        //     }
+        // }
+        getOperacion(numero, multi) {
+            return numero + " * " + multi;
+        },
+        getMultiplicacion(numero, multi) {
+            return numero * multi;
         }
     }
 }
